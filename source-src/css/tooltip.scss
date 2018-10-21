@@ -9,7 +9,7 @@
         right: 10px;
         &:hover {
             a.share-outer {
-                background: #24c1f6;
+                background: #4D4D4D;
             }
         }
     }
@@ -35,12 +35,12 @@
     /* Tooltip */
     .tooltip-content {
         position: absolute;
-        background: rgba(36, 193, 246, 0.9);
+        background: rgba(77, 77, 77, 0.9);
         z-index: 9999;
         width: 200px;
         bottom: 50%;
         margin-bottom: -10px;
-        border-radius: 20px;
+        border-radius: 5px;
         font-size: 1.1em;
         text-align: center;
         color: #fff;
