@@ -19,7 +19,7 @@ module.exports = {
   output: {
     path: __dirname+"/source",
     publicPath: "./",
-    filename: "[name].js"
+    filename: "[name].[chunkhash:6].js"
   },
   module: {
     rules: [{
@@ -37,11 +37,11 @@ module.exports = {
       loader: 'url-loader?limit=500&name=img/[name].[ext]'
     }, {
       test: /\.(woff|svg|eot|ttf)\??.*$/,
-      loader: "file-loader?name=fonts/[name].[ext]"
+      loader: "file-loader?name=fonts/[name].[hash:6].[ext]"
     }]
   },
   plugins: [
-    new ExtractTextPlugin('style.css'),
+    new ExtractTextPlugin('[name].[chunkhash:6].css'),
     new HtmlWebpackPlugin({
       inject: false,
       cache: false,
@@ -49,7 +49,14 @@ module.exports = {
       template: './source-src/script.ejs',
       filename: '../layout/_partial/script.ejs'
     }),
-    new CleanPlugin(['source/*.js'],{
+    new HtmlWebpackPlugin({
+      inject: false,
+      cache: false,
+      minify: minifyHTML,
+      template: './source-src/css.ejs',
+      filename: '../layout/_partial/css.ejs'
+    }),
+    new CleanPlugin(['source/'],{
       verbose: true,
       dry: false,
     })

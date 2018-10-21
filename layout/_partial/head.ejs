@@ -31,7 +31,7 @@
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
-  <link rel="stylesheet" type="text/css" href="<%= config.root %>style.css">
+  <%- partial('css') %>
   <style type="text/css">
   <% var defaultCtnBg = 'linear-gradient(200deg,#a0cfe4,#e8c37e)' %>
     #container.show {
