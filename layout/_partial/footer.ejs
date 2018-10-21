@@ -2,11 +2,16 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+    		&copy; 2017-<%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+    		<% if (theme.beian){ %>
+          <br><a href="http://www.miibeian.gov.cn/" target="_blank"><%= theme.beian %></a>
+    		<% } %>
     	</div>
       	<div class="footer-right">
+          <% if (theme.upyun){ %>
+            <a href="https://console.upyun.com/register/?invite=B1Tr4zsVf" target="_blank"> &nbsp; <img src="https://oss.xxwhite.com/static/upyun.png" width="100"></a>
+          <% } %>
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
-    </div>
+      	</div>      	
   </div>
 </footer>
