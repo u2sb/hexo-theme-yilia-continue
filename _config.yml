@@ -137,6 +137,9 @@ slider:
 # MarkDown文件下载地址,如：http://md.xxwhite.com，以后会写文章教怎么上传原文，不会请留空
 mdhost: 
 
+#pangu.js 用于自动加空格
+pangu: true
+
 # 智能菜单
 # 如不需要，将该对应项置为false
 # 比如
