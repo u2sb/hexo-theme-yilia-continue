@@ -1,11 +1,12 @@
 <div id="vcomment" class="comment"></div>
-<script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-<script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
-<script>
-   var notify = <%= theme.valine.notify %> == true ? true : false;
-   var verify = <%= theme.valine.verify %> == true ? true : false;
-   var visitor = <%= theme.valine.visitor %> == true ? true : false;
-   new Valine({
+<script async src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+<script async src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+<script async>
+    var notify = <%= theme.valine.notify %> == true ? true : false;
+    var verify = <%= theme.valine.verify %> == true ? true : false;
+    var visitor = <%= theme.valine.visitor %> == true ? true : false;
+    window.onload = function() {
+        new Valine({
             av: AV,
             el: '#vcomment',
             notify: notify,
@@ -18,5 +19,6 @@
             pageSize: <%= theme.valine.pageSize %>,
             path: '<%- url_for(post.path) %>',
             visitor: visitor
-    });
+        });
+    }
 </script>
