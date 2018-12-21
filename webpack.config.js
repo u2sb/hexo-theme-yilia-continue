@@ -58,7 +58,7 @@ module.exports = {
     }),
     new CleanPlugin(['source/'],{
       verbose: true,
-      dry: false,
+      dry: false
     })
   ],
   watch: true
