@@ -1,11 +1,10 @@
 <div id="vcomment" class="comment"></div>
-<script async src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-<script async src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
 <script async>
     var notify = <%= theme.valine.notify %> == true ? true : false;
     var verify = <%= theme.valine.verify %> == true ? true : false;
     var visitor = <%= theme.valine.visitor %> == true ? true : false;
-    window.onload = function() {
+    dynamicLoadJs('//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js');
+    dynamicLoadJs('//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js',function(){
         new Valine({
             av: AV,
             el: '#vcomment',
@@ -20,5 +19,5 @@
             path: '<%- url_for(post.path) %>',
             visitor: visitor
         });
-    }
+    });
 </script>

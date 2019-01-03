@@ -1,11 +1,6 @@
 <% if (theme.baidu_analytics){ %>
 <script>
-var _hmt = _hmt || [];
-(function() {
-	var hm = document.createElement("script");
-	hm.src = "https://hm.baidu.com/hm.js?<%= theme.baidu_analytics %>";
-	var s = document.getElementsByTagName("script")[0]; 
-	s.parentNode.insertBefore(hm, s);
-})();
+function dynamicLoadJs(u,c){vard=document,t="script",o=d.createElement(t),s=d.getElementsByTagName(t)[0];o.src=u;if(c){o.addEventListener("load",function(e){c(e)})}s.parentNode.insertBefore(o,s)}
+(dynamicLoadJs('https://hm.baidu.com/hm.js?<%= theme.baidu_analytics %>'))();
 </script>
 <% } %>
