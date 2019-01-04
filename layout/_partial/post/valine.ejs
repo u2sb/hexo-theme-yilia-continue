@@ -1,9 +1,9 @@
 <div id="vcomment" class="comment"></div>
-<script async>
+<script async="async">
     var notify = <%= theme.valine.notify %> == true ? true : false;
     var verify = <%= theme.valine.verify %> == true ? true : false;
     var visitor = <%= theme.valine.visitor %> == true ? true : false;
-    loadScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js');
+    loadScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js',function(){
     loadScript('https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js',function(){
         new Valine({
             av: AV,
@@ -19,5 +19,6 @@
             path: '<%- url_for(post.path) %>',
             visitor: visitor
         });
+    });
     });
 </script>
