@@ -1,6 +1,5 @@
 <% if (theme.baidu_analytics){ %>
 <script>
-function dynamicLoadJs(u,c){vard=document,t="script",o=d.createElement(t),s=d.getElementsByTagName(t)[0];o.src=u;if(c){o.addEventListener("load",function(e){c(e)})}s.parentNode.insertBefore(o,s)}
-(dynamicLoadJs('https://hm.baidu.com/hm.js?<%= theme.baidu_analytics %>'))();
+(loadScript('https://hm.baidu.com/hm.js?<%= theme.baidu_analytics %>'))();
 </script>
 <% } %>

@@ -17,7 +17,7 @@ module.exports = {
     mobile: ["babel-polyfill", "./source-src/js/mobile.js"]
   },
   output: {
-    path: __dirname+"/source",
+    path: __dirname+"/source/assets/",
     publicPath: "./",
     filename: "[name].[chunkhash:6].js"
   },
@@ -31,7 +31,10 @@ module.exports = {
       loader: 'html'
     }, {
       test: /\.(scss|sass|css)$/,
-      loader: ExtractTextPlugin.extract({fallback:"style-loader",use:["css-loader","postcss-loader","sass-loader?outputStyle=compressed"]})
+      loader: ExtractTextPlugin.extract({
+          fallback:"style-loader",
+          use:["css-loader","postcss-loader","sass-loader?outputStyle=compressed"]
+          })
     }, {
       test: /\.(gif|jpg|png)\??.*$/,
       loader: 'url-loader?limit=500&name=img/[name].[ext]'
@@ -47,14 +50,14 @@ module.exports = {
       cache: false,
       minify: minifyHTML,
       template: './source-src/script.ejs',
-      filename: '../layout/_partial/script.ejs'
+      filename: '../../layout/_partial/script.ejs'
     }),
     new HtmlWebpackPlugin({
       inject: false,
       cache: false,
       minify: minifyHTML,
       template: './source-src/css.ejs',
-      filename: '../layout/_partial/css.ejs'
+      filename: '../../layout/_partial/css.ejs'
     }),
     new CleanPlugin(['source/'],{
       verbose: true,

@@ -3,8 +3,8 @@
     var notify = <%= theme.valine.notify %> == true ? true : false;
     var verify = <%= theme.valine.verify %> == true ? true : false;
     var visitor = <%= theme.valine.visitor %> == true ? true : false;
-    dynamicLoadJs('//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js');
-    dynamicLoadJs('//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js',function(){
+    loadScript('//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js');
+    loadScript('//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js',function(){
         new Valine({
             av: AV,
             el: '#vcomment',
