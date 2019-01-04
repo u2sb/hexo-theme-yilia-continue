@@ -56,6 +56,13 @@ module.exports = {
       inject: false,
       cache: false,
       minify: minifyHTML,
+      template: './source-src/main.ejs',
+      filename: '../../layout/_partial/main.ejs'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      cache: false,
+      minify: minifyHTML,
       template: './source-src/css.ejs',
       filename: '../../layout/_partial/css.ejs'
     }),
