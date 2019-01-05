@@ -12,7 +12,6 @@
       <% } %>
     <% } %>
     <% var ulWidth = '70%' %>
-
     <ul style="width: <%= ulWidth %>">
     <% var divide = 100 / count + '%' %>
     <% for (var i in theme.smart_menu){ %>
@@ -45,30 +44,6 @@
           </ul>
         </div>
         <ul class="search-ul">
-          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
-            3、在根目录_config.yml里添加配置：
-<pre style="font-size: 12px;" q-show="jsonFail">
-  jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
-</pre>
-          </p>
           <li class="search-li" q-repeat="items" q-show="isShow">
             <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
             <p class="search-time">
@@ -97,7 +72,6 @@
   		<%}%>
     	</section>
     <%}%>
-
     <%if(hasAboutme){%>
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	<%if(theme.aboutme){%>
@@ -105,6 +79,5 @@
   	  	<%}%>
     	</section>
     <%}%>
-  </div>
-  
+  </div>  
 </div>
