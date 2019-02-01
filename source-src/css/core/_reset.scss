@@ -164,7 +164,8 @@ svg:not(:root) {
 pre {
     overflow: auto; // 1
     white-space: pre; // 2
-    white-space: pre-wrap; // 2
+    white-space: nowrap;
+    //white-space: pre-wrap; // 2
     word-wrap: break-word; // 2
 }
 
