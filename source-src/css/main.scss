@@ -5,6 +5,9 @@
 @import "./tags";
 @import "./tools";
 @import "./article-main";
+@import "./article-inner";
+@import "./article-nav";
+@import "./footer";
 @media screen and (max-width: 800px) {
   @import "./mobile";
   @import "./mobile-slider";
