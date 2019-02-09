@@ -4,6 +4,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CleanPlugin = require('clean-webpack-plugin');
 
+
 var minifyHTML = {
   collapseInlineTagWhitespace: true,
   collapseWhitespace: true,
@@ -14,7 +15,8 @@ module.exports = {
   entry: {
     main: "./source-src/js/main.js",
     slider: "./source-src/js/slider.js",
-    mobile: ["babel-polyfill", "./source-src/js/mobile.js"]
+    mobile: ["babel-polyfill", "./source-src/js/mobile.js"],
+    minor: "./source-src/css/minor.scss"
   },
   output: {
     path: __dirname+"/source/assets/",
@@ -71,5 +73,5 @@ module.exports = {
       dry: false
     })
   ],
-  watch: true
+  watch: false
 }
