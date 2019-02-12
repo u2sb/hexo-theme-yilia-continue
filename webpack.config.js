@@ -15,8 +15,7 @@ module.exports = {
   entry: {
     main: "./source-src/js/main.js",
     slider: "./source-src/js/slider.js",
-    mobile: ["babel-polyfill", "./source-src/js/mobile.js"],
-    minor: "./source-src/css/minor.scss"
+    mobile: ["babel-polyfill", "./source-src/js/mobile.js"]
   },
   output: {
     path: __dirname+"/source/assets/",
