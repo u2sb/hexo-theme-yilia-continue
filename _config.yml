@@ -138,6 +138,13 @@ slider:
 # MarkDown文件下载地址,如：http://md.xxwhite.com，以后会写文章教怎么上传原文，不会请留空
 mdhost: 
 
+# 网站建站日期
+wbd:
+  y: 2015
+  m: 03
+  d: 08
+
+
 #pangu.js 用于自动加空格
 pangu: true
 
