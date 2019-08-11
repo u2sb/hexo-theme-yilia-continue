@@ -1,14 +1,10 @@
 <div id="vcomment"></div>
-<script async>
-    var notify = <%= theme.valine.notify %> == true ? true : false;
-    var verify = <%= theme.valine.verify %> == true ? true : false;
-    var visitor = <%= theme.valine.visitor %> == true ? true : false;
-    var recordIP = <%= theme.valine.recordIP %> == true ? true : false;
+<script>
     loadScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js',function(){
         new Valine({
             el: '#vcomment',
-            notify: notify,
-            verify: verify,
+            notify: <%= theme.valine.notify %>,
+            verify: <%= theme.valine.verify %>,
             appId: '<%= theme.valine.appid %>',
             appKey: '<%= theme.valine.appkey %>',
             placeholder: '<%= theme.valine.placeholder %>',
@@ -16,8 +12,8 @@
             avatar_cdn: '<%= theme.valine.avatar_cdn %>',
             pageSize: <%= theme.valine.pageSize %>,
             path: '<%- url_for(post.path) %>',
-            visitor: visitor,
-            recordIP: recordIP
+            visitor: <%= theme.valine.visitor %>,
+            recordIP: <%= theme.valine.recordIP %>
         });
         if(window.location.hash){
           var checkExist = setInterval(function() {

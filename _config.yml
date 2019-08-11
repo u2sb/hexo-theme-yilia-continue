@@ -121,6 +121,7 @@ valine:
  placeholder: '友情提醒，留下正确的邮箱地址可以第一时间获取评论反馈' #评论框占位符
  pageSize: 12 #评论分页
  visitor: true #阅读统计
+ recordIP: true #记录IP
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
@@ -160,4 +161,4 @@ friends:
   随遇而安: 'https://www.iszy.me'
   2401的晚秋咖啡: 'https://zsh2401.top/'
   
-aboutme: 叉叉白<br><br>一个小白搞机的记事本
+aboutme: 叉叉白 一个小白搞机的记事本
