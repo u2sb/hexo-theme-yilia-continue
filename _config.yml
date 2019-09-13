@@ -122,6 +122,7 @@ valine:
  pageSize: 12 #评论分页
  visitor: true #阅读统计
  recordIP: true #记录IP
+ serverURLs: ''
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
