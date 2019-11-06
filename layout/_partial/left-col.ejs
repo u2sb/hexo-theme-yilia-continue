@@ -22,7 +22,7 @@
 		<nav class="header-smart-menu">
     		<% for (var i in theme.smart_menu){ %>
     			<% if(theme.smart_menu[i]){ %>
-    			<a q-on="click: openSlider(e, '<%-i%>')" href="javascript:void(0)"><%= theme.smart_menu[i] %></a>
+    			<a q-on="click: openSlider(e, '<%-i%>')" href="javascript:void(0)" target="_self"><%= theme.smart_menu[i] %></a>
     			<% } %>
             <%}%>
 		</nav>
