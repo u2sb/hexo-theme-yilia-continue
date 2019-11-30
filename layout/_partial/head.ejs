@@ -40,4 +40,7 @@
   </style>
   <%- partial('load-script') %>
   <%- partial('main') %>
+  <% if (config.offline){ %>
+    <%- partial('service-worker') %>
+  <% } %>
 </head>
