@@ -8,17 +8,17 @@ menu:
 
 # SubNav
 subnav:
-  github: '#'
+  #github: '#'
   #weibo: "#"
   #zhihu: "#"
   #qq: "#"
-  weixin: '#'
+  #weixin: '#'
   #jianshu: "#"
   #douban: "#"
   #segmentfault: "#"
-  bilibili: '#'
+  #bilibili: '#'
   #acfun: "#"
-  mail: '#'
+  #mail: '#'
   #facebook: "#"
   #google: "#"
   #twitter: "#"
