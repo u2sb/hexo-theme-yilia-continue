@@ -1,13 +1,23 @@
 {
   "presets": [
-    "@babel/preset-env"
+    [
+      "@babel/preset-env",
+      {
+        "modules": "commonjs",
+        "useBuiltIns": "entry"
+      }
+    ]
   ],
   "plugins": [
     "@babel/plugin-proposal-class-properties",
     [
       "@babel/plugin-transform-runtime",
       {
-        "corejs": 2
+        "corejs": {
+          "version": 3,
+          "proposals": true
+        },
+        "useESModules": true
       }
     ],
     "@babel/plugin-syntax-dynamic-import",
