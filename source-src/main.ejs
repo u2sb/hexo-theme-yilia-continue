@@ -1,4 +1,13 @@
+<script>
 <% var left = '<%=' %>
 <% var right = '%' %>
 <% var right2 = '>' %>
-<% for (var asset in compilation.assets) { %><% if (asset.indexOf('main') >= 0) { %><script defer src="<%= left %>config.root<%= right %><%= right2 %>assets/<%= asset %>"></script><% } %><% } %>
+(function() {
+	<% for (var asset in compilation.assets) { %>
+        <% if (asset.indexOf('main') >= 0 && asset.indexOf('.js') >= 0) { %>
+            <% var main = asset %>
+        <% } %>
+    <% } %>
+    loadScript("<%= left %>config.root<%= right %><%= right2 %>assets/<%= main %>")
+})();
+</script>

@@ -3,6 +3,11 @@
 <% var right = '%' %>
 <% var right2 = '>' %>
 (function() {
-	<% for (var asset in compilation.assets) { %><% if (asset.indexOf('slider') >= 0) { %><% var slider = asset %><% } %><% } %>loadScript("<%= left %>config.root<%= right %><%= right2 %>assets/<%= slider %>")
+	<% for (var asset in compilation.assets) { %>
+        <% if (asset.indexOf('slider') >= 0) { %>
+            <% var slider = asset %>
+        <% } %>
+    <% } %>
+    loadScript("<%= left %>config.root<%= right %><%= right2 %>assets/<%= slider %>")
 })();
 </script>
