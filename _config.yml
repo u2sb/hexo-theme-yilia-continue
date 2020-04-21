@@ -1,10 +1,10 @@
 # Header
 
 menu:
-  主页: '/'
-  搞机: '/tags/搞机/'
-  留言: '/MessageBoard/'
-  关于: '/aboutme/'
+  主页: "/"
+  搞机: "/tags/搞机/"
+  留言: "/MessageBoard/"
+  关于: "/aboutme/"
 
 # SubNav
 subnav:
@@ -23,9 +23,9 @@ subnav:
   #google: "#"
   #twitter: "#"
   #linkedin: "#"
-  rss: '/atom.xml'
+  rss: "/atom.xml"
 
-rss: '/atom.xml'
+rss: "/atom.xml"
 
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
@@ -35,9 +35,9 @@ root:
 # Content
 
 # 文章太长，截断按钮文字
-excerpt_link: ''
+excerpt_link: ""
 # 文章卡片右下角常驻链接，不需要请设置为false
-show_all_link: '展开全文'
+show_all_link: "展开全文"
 # 数学公式
 mathjax: false
 # 是否在新窗口打开链接
@@ -48,20 +48,20 @@ fancybox: true
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2
 # 打赏wording
-reward_wording: '请作者吃辣条'
+reward_wording: "请作者吃辣条"
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: ''
+alipay: ""
 # 微信二维码图片地址
-weixin: ''
+weixin: ""
 
 # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有copyright不为false的文章均有版权声明
 copyright_type: 2
 
 # 备案信息，没有请留空
-beian: 
+beian:
 
 # 又拍云开发者计划图片链接，没有请留空
-upyun: 
+upyun:
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
@@ -69,7 +69,7 @@ toc: 2
 # 根据自己的习惯来设置，如果你的目录标题习惯有标号，置为true即可隐藏hexo重复的序号；否则置为false
 toc_hide_index: false
 # 目录为空时的提示
-toc_empty_wording: '目录，不存在的…'
+toc_empty_wording: "目录，不存在的…"
 
 # 是否有快速回到顶部的按钮
 top: true
@@ -77,10 +77,10 @@ top: true
 # Miscellaneous 百度统计和谷歌统计，站点标识
 #baidu_analytics: ''
 #google_analytics: ''
-favicon: ''
+favicon: ""
 
 #你的头像url
-avatar: ''
+avatar: ""
 
 #是否开启分享，如果不需要建议不要开启
 share_jia: false
@@ -96,40 +96,46 @@ duoshuo: false
 wangyiyun: false
 
 #3、畅言
-#changyan_appid: 
-#changyan_conf: 
+#changyan_appid:
+#changyan_conf:
 
 #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 disqus: false
 
 #5、Gitment
-gitment_owner: false      #你的 GitHub ID
-gitment_repo: ''          #存储评论的 repo
+gitment_owner: false #你的 GitHub ID
+gitment_repo: "" #存储评论的 repo
 gitment_oauth:
-  client_id: ''           #client ID
-  client_secret: ''       #client secret
-  
-  
+  client_id: "" #client ID
+  client_secret: "" #client secret
+
 #6、Valine https://valine.js.org
-valine: 
- appid: '' #Leancloud应用的appId
- appkey: '' #Leancloud应用的appId
- verify: false #验证码
- notify: false #评论回复提醒
- avatar: '' #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
- avatar_cdn: '' #头像CDN
- placeholder: '友情提醒，留下正确的邮箱地址可以第一时间获取评论反馈' #评论框占位符
- pageSize: 12 #评论分页
- visitor: true #阅读统计
- recordIP: true #记录IP
- serverURLs: ''
+valine:
+  appId: "" #Leancloud应用的appId
+  appKey: "" #Leancloud应用的appKey
+  verify: false #验证码
+  notify: false #评论回复提醒
+  avatar: "" #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
+  avatar_cdn: "" #头像CDN
+  placeholder: "友情提醒，留下正确的邮箱地址可以第一时间获取评论反馈" #评论框占位符
+  pageSize: 12 #评论分页
+  visitor: true #阅读统计
+  recordIP: true #记录IP
+  serverURLs: ""
+  version: latest #例如 latest 1.4.5
+#  emojiCDN: https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/
+#  emojiMaps:
+#    smile: e3/2018new_weixioa02_org.png
+#    lovely: 09/2018new_keai_org.png
+
+
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
-  header: '#4d4d4d'
+  header: "#4d4d4d"
   # 右滑板块背景
-  slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
+  slider: "linear-gradient(200deg,#a0cfe4,#e8c37e)"
 
 # slider的设置
 slider:
@@ -137,14 +143,13 @@ slider:
   showTags: false
 
 # MarkDown文件下载地址,如：http://md.xxwhite.com，以后会写文章教怎么上传原文，不会请留空
-mdhost: 
+mdhost:
 
 # 网站建站日期
 wbd:
   y: 2015
   m: 03
   d: 08
-
 
 #pangu.js 用于自动加空格
 pangu: true
@@ -155,18 +160,18 @@ pangu: true
 #smart_menu:
 #  friends: false
 smart_menu:
-  innerArchive: '所有文章'
-  friends: '友链'
-  aboutme: '关于本站'
+  innerArchive: "所有文章"
+  friends: "友链"
+  aboutme: "关于本站"
 
 friends:
-  叉叉白: 'https://www.xxwhite.com/'
-  大姐姐的博客Minemine: 'https://minemine.cc/'
-  酷安基佬: 'http://socoolapk.top/'
-  Se7en: 'https://www.se7ensec.cn/'
-  姬长信: 'https://blog.isoyu.com/'
-  staunchkai: 'http://staunchkai.com/'
-  随遇而安: 'https://www.iszy.me'
-  2401的晚秋咖啡: 'https://zsh2401.top/'
-  
+  叉叉白: "https://www.xxwhite.com/"
+  大姐姐的博客Minemine: "https://minemine.cc/"
+  酷安基佬: "http://socoolapk.top/"
+  Se7en: "https://www.se7ensec.cn/"
+  姬长信: "https://blog.isoyu.com/"
+  staunchkai: "http://staunchkai.com/"
+  随遇而安: "https://www.iszy.me"
+  2401的晚秋咖啡: "https://zsh2401.top/"
+
 aboutme: 叉叉白 一个小白搞机的记事本

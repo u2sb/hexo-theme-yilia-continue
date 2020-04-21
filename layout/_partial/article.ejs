@@ -150,7 +150,7 @@
     }) %>
   <% } %>
   
-  <% if (theme.valine && theme.valine.appid && theme.valine.appkey){ %>
+  <% if (theme.valine && ((theme.valine.appId && theme.valine.appKey) || (theme.valine.appid && theme.valine.appkey))){ %>
     <section id="comments">
       <%- partial('post/valine') %>
     </section>
