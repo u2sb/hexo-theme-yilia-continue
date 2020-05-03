@@ -13,14 +13,9 @@
 		showTags: <%=(theme.slider && theme.slider.showTags) ? true : false%>
 	}
 </script>
-<%- partial('main') %>
 <%- partial('script') %>
 <%- partial('google-analytics') %>
 <%- partial('baidu-analytics') %>
 <%- partial('pangu') %>
-<% if (config.offline){ %>
-  <%- partial('service-worker') %>
-<% } %>
-<% if (theme.mathjax){ %>
-  <%- partial('mathjax') %>
-<% } %>
+<%- partial('service-worker') %>
+<%- partial('mathjax') %>
