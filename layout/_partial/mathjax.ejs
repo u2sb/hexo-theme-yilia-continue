@@ -1,26 +1,4 @@
-<% if (theme.mathjax || post.mathjax ){ %>
-<script>
-  loadScript('https://cdn.jsdelivr.net/npm/mathjax/MathJax.min.js?config=TeX-AMS-MML_HTMLorMML',
-    function () {
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [
-            ['$', '$'],
-            ["\\(", "\\)"]
-          ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-
-      MathJax.Hub.Queue(function () {
-        var all = MathJax.Hub.getAllJax(),
-          i;
-        for (i = 0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    });
-
-</script>
+<% if (theme.mathjax ){ %>
+<script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <% } %>
