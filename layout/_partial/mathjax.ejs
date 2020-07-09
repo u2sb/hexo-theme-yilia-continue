@@ -1,13 +1,4 @@
-<% if(!theme.mathjax && !is_post()) { %>
-    <% page.posts.each(function(post){ %>
-        <% if(post.mathjax) { %>
-            <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=es6"></script>
-            <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-        <% } %>
-    <% }) %>
-<% } %>
-
-<% if (theme.mathjax || (is_post() && post.mathjax)){ %>
+<% if (is_post() && (theme.mathjax || post.mathjax)){ %>
 <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <% } %>
