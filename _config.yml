@@ -2,9 +2,6 @@
 
 menu:
   主页: "/"
-  搞机: "/tags/搞机/"
-  留言: "/MessageBoard/"
-  关于: "/aboutme/"
 
 # SubNav
 subnav:
