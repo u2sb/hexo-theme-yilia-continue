@@ -1,6 +1,6 @@
 <% if (theme.google_analytics){ %>
 <script>
-loadScript('https://www.googletagmanager.com/gtag/js?id=<%= theme.google_analytics %>',function(){
+assetsLoader.load([{url:"https://www.googletagmanager.com/gtag/js?id=<%= theme.google_analytics %>", type:'script'}],function(){
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());

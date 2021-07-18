@@ -2,4 +2,10 @@
 <% var right = '%' %>
 <% var right2 = '>' %>
 <% var onloadString = "this.onload=null;this.rel='stylesheet'" %>
-<link rel="stylesheet" type="text/css" href="<%= left %>config.root<%= right %><%= right2 %>assets/<%= htmlWebpackPlugin.files.css[0] %>">
+
+<% for (var asset in compilation.assets) { %>
+    <% if (asset.indexOf('main') >= 0 && asset.indexOf('.css') >= 0) { %>
+        <% var main = asset %>
+    <% } %>
+<% } %>
+<link rel="stylesheet" type="text/css" href="<%= left %>config.root<%= right %><%= right2 %>assets/<%= main %>">

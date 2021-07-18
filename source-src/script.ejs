@@ -8,7 +8,7 @@
             <% var main = asset %>
         <% } %>
     <% } %>
-    loadScript("<%= left %>config.root<%= right %><%= right2 %>assets/<%= main %>");
+    assetsLoader.load([{url:"<%= left %>config.root<%= right %><%= right2 %>assets/<%= main %>", type:'script'}]);
 })();
 (function() {
 	<% for (var asset in compilation.assets) { %>
@@ -16,6 +16,6 @@
             <% var slider = asset %>
         <% } %>
     <% } %>
-    loadScript("<%= left %>config.root<%= right %><%= right2 %>assets/<%= slider %>");
+    assetsLoader.load([{url:"<%= left %>config.root<%= right %><%= right2 %>assets/<%= slider %>", type:'script'}]);
 })();
 </script>

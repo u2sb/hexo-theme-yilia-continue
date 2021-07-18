@@ -1,0 +1,14 @@
+<% var left = '<%=' %>
+<% var right = '%' %>
+<% var right2 = '>' %>
+
+<% for (var asset in compilation.assets) { %>
+    <% if (asset.indexOf('assetsLoader') >= 0 && asset.indexOf('.js') >= 0) { %>
+        <% var assetsLoader = asset %>
+    <% } %>
+<% } %>
+<script src="<%= left %>config.root<%= right %><%= right2 %>assets/<%= assetsLoader %>"></script>
+<script>
+var assetsLoader = new asyncAssetsLoader();
+</script>
+

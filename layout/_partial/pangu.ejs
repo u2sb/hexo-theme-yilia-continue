@@ -1,5 +1,7 @@
 <% if (theme.pangu){ %>
 <script async>
-loadScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js',function(){pangu.spacingPage();});
+assetsLoader.load([{url:'https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js', type:'script'}],function(){
+    pangu.spacingPage();
+});
 </script>
 <% } %>
