@@ -6,21 +6,33 @@
 
 [叉叉白博客](https://blog.xxwhite.com)
 
-手机效果 ![phone](https://i.loli.net/2020/05/27/UkqvTwIMszRZ3Ou.png)
+手机效果  
+![phone](https://i.loli.net/2020/05/27/UkqvTwIMszRZ3Ou.png)
 
 —————————————————————
 
-## 一、修改
+## 一、相对(原主题)[https://github.com/litten/hexo-theme-yilia]的修改
 
 修改部分比较多，下面列举的不一定全面。
 
+### 维护修复
+
+- 更新 webpack 版本，舍弃对 IE 的完全支持
 - 修复主题内错误
 - 增大打赏图片大小
-- 移除统计模块
+
+
+### 新增功能
+
 - 支持 Valine 和 MiniValine 评论（其他评论没有继续维护，不一定能用）
 - 修改 js 加载方式，提高网页相应速度
 - 增加 pangu.js
 - 增加备案地址，增加文章阅读统计，增加文章协议，增加文章源码查看功能
+
+### 删减模块
+
+- 移除统计模块
+- 移除部分评论系统
 
 ## 二、注意
 
