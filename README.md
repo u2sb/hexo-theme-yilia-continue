@@ -11,9 +11,9 @@
 
 —————————————————————
 
-## 一、相对(原主题)[https://github.com/litten/hexo-theme-yilia]的修改
+## 一、相对原主题的修改
 
-修改部分比较多，下面列举的不一定全面。
+相对 (原主题)[https://github.com/litten/hexo-theme-yilia] 修改部分比较多，下面列举的不一定全面。
 
 ### 维护修复
 
@@ -21,13 +21,13 @@
 - 修复主题内错误
 - 增大打赏图片大小
 
-
 ### 新增功能
 
 - 支持 Valine 和 MiniValine 评论（其他评论没有继续维护，不一定能用）
 - 修改 js 加载方式，提高网页相应速度
 - 增加 pangu.js
 - 增加备案地址，增加文章阅读统计，增加文章协议，增加文章源码查看功能
+- 支持 npm 安装方式
 
 ### 删减模块
 
@@ -41,21 +41,29 @@
 
 ## 三、使用
 
-推荐使用子模块安装，可以参考[这篇文章](https://blog.xxwhite.com/2020/blog-ci.html)。
+~~推荐使用子模块安装，可以参考[这篇文章](https://blog.xxwhite.com/2020/blog-ci.html)。~~
+
+推荐使用 `npm` 安装
 
 ### 安装
 
-```bash
-$ git submodule add https://github.com/MonoLogueChi/hexo-theme-yilia themes/yilia
+```
+npm install hexo-theme-yilic
 ```
 
 ### 配置
 
-修改 hexo 根目录下的 `_config.yml` ： `theme: yilia`
+\_config.yml 下
+
+```yaml _config.yml
+theme: yilic
+```
+
+主题配置文件，新建文件 `_config.yilic.yml`
 
 ### 更新
 
-按照子模块的方式更新即可。
+按照 npm 方式更新即可
 
 ## 四、配置
 

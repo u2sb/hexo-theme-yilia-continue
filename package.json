@@ -1,6 +1,6 @@
 {
-    "name": "hexo-theme-yilia",
-    "version": "4.0.0",
+    "name": "hexo-theme-yilic",
+    "version": "4.0.3",
     "description": "a theme for hexo",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,19 +9,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/litten/hexo-theme-yilia.git"
+        "url": "git+https://github.com/u2sb/hexo-theme-yilia-continue.git"
     },
     "keywords": [
         "hexo",
         "theme",
         "blog"
     ],
-    "author": "litten",
+    "author": "MonoLogueChi",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/litten/hexo-theme-yilia/issues"
+        "url": "https://github.com/u2sb/hexo-theme-yilia-continue/issues"
     },
-    "homepage": "https://github.com/litten/hexo-theme-yilia#readme",
+    "homepage": "https://github.com/u2sb/hexo-theme-yilia-continue#readme",
     "devDependencies": {
         "@babel/core": "^7.14.6",
         "@babel/polyfill": "^7.8.7",
